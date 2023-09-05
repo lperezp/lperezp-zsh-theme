@@ -3,11 +3,11 @@ function real_time() {
     local color2="%{$fg_no_bold[yellow]%}";
     local time="[$(date +%H:%M)]";
     local color_reset="%{$reset_color%}";
-    echo "${color}🐈$(host_name)${color_reset} 🤖 ${color}${time}${color_reset}";
+    echo "${color}🐈$(host_name)${color_reset}";
 }
 
 function host_name() {
-    local color="%{$fg_no_bold[cyan]%}";                    # color in PROMPT need format in %{XXX%} which is not same with echo
+    local color="%{$fg_no_bold[cyan]%}";
     local ip
     if [[ "$OSTYPE" == "linux-gnu" ]]; then
         ip="$(hostname)";
@@ -29,7 +29,7 @@ function directory() {
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[red]%}[%{$fg_no_bold[white]%}";
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} ";
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[red]%}] 🔥";
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_no_bold[red]%}] 💙";
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_no_bold[red]%}] 🖤";
 
 function update_git_status() {
     GIT_STATUS=$(git_prompt_info);
