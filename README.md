@@ -1,6 +1,11 @@
 # lperezp-zsh-theme
 An oh-my-zsh theme.
 
+## Introduction
+Theme preview.
+
+![Theme preview](https://raw.githubusercontent.com/lperezp/lperezp-zsh-theme/main/preview.png)
+
 ## Installation
  1. Write in your terminal `git clone https://github.com/lperezp/lperezp-zsh-theme/ $ZSH_CUSTOM/themes/lperezp-zsh-theme`
  2. Open your `.zshrc`
